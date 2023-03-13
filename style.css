@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Poppins";
+  background-color: #030303;
+  background-image: url(./img/hero-icon-bg.svg);
+}
+.container {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0% auto;
+  background: white;
+}
+header img {
+  padding: 20px;
+  border-radius: 50%;
+  margin-left: 10px;
+  height: 260px;
+  width: 260px;
+  object-fit: cover;
+}
+header {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(251, 251, 52);
+}
+header h1 {
+  font-family: "Pacifico";
+
+  font-weight: 400;
+}
+
+header h3 {
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+main {
+  background-color: #030303;
+  color: white;
+  border: 1px solid white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+}
+
+.box {
+  width: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20.5px;
+}
+.linkIcon {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  background-color: yellow;
+  color: #030303;
+  padding: 4px;
+  border-radius: 5px;
+  box-shadow: rgba(248, 248, 248, 0.4) 5px 5px;
+}
+.linkIcon i {
+  transition: transform 0.3s;
+}
+.linkIcon:hover {
+  cursor: pointer;
+}
+
+.linkIcon:hover i {
+  transform: translateX(0.25rem);
+}
+.box .name {
+  font-family: "Pacifico";
+  font-size: 20px;
+}
+.box .icon i {
+  font-size: 25px;
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 700px;
+  }
+  .box {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    max-width: 500px;
+  }
+  .box {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .container {
+    max-width: 450px;
+  }
+  .box {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    max-width: 350px;
+  }
+  header h1 {
+    font-size: 30px;
+  }
+  .box {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    min-width: 200px;
+  }
+  header h1 {
+    font-size: 30px;
+  }
+  .box {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .container {
+    width: 100%;
+  }
+  header h1 {
+    font-size: 25px;
+  }
+  header h3 {
+    font-size: 16px;
+  }
+  .box {
+    width: 100%;
+  }
+}
